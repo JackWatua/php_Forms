@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/auth.css">
+    <script src="./static/js/auth.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="./media/logo/logo-no-background.svg" alt="logo">
+    </div>
+    <div class="form-container">
+        <div class="header">
+            <div class="head head1" onclick="toogle_forms('Sign Up');" id="sign-up"><p>Sign Up</p></div>
+            <div class="head head2" onclick="toogle_forms('Sign In');" id="sign-in"><p>Sign In</p></div>
+        </div>
+        <form action="signup.php" method="post" id="sign-up-form" name="sign-up-form">
+            <label for="name">name</label>
+            <input type="text" name="name" id="name" placeholder="full name">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com">
+            <label for="initial-password">password</label>
+            <input type="password" name="initial-password1" id="password1" placeholder="set password">
+            <label for="confirm-password">confirm password</label>
+            <input type="password" name="confirm-password" id="password2" placeholder="confirm password">
+            <button type="submit">Sign Up</button>
+        </form>
+
+
+        <form action="signup.php" method="post" id="sign-in-form" name="sign-in-form">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com">
+            <label for="password1">password</label>
+            <input type="password" name="password1" id="password1" placeholder="set password">
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</body>
+</html>
